@@ -1,0 +1,11 @@
+<h2><%= @task.title %></h2>
+<p><%= @task.details %></p>
+<p class='check-box'><% if @task.completed %>
+        <img src="https://www.pinclipart.com/picdir/middle/154-1543711_cuneyt-meran-testimonial-checked-box-clip-art-png.png" alt="checked-box" class='check-box'>
+        <% else %>
+        <img src="https://cdn4.iconfinder.com/data/icons/social-productivity-line-art-4/128/checkbox-square-unchecked-512.png" alt="checked-box" class='check-box'>
+        <% end %>
+
+<br></br>
+
+<h3><%= link_to 'Back to list', root_path %></h3>
